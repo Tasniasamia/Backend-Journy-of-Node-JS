@@ -1,1 +1,0 @@
-Don't judge me by my quality, okay?My Life , My Rules

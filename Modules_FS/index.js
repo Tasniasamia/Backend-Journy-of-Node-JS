@@ -7,6 +7,14 @@ fS.writeFile("FS.js" , "Don't judge me by my quality, okay?" , (err)=>{
         console.log("Successfull");
     }
 })
+fS.writeFile("TS.txt", "File content everywhere",(err)=>{
+    if(err){
+        console.log(err)
+    }
+    else{
+        console.log("Add another file");
+    }
+})
 fS.appendFile("FS.js" , "My Life , My Rules", (err)=>{
     if(err){
         console.log(err);
@@ -34,3 +42,13 @@ fS.readFile("FS.txt","utf-8",(err,data)=>{
         console.log(data);
     }
 })
+
+
+
+    
+    if(fS.existsSync("FS.js")){
+        fS.unlinkSync("FS.js");
+    }
+    else{
+        console.log("not exist");
+    }
